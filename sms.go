@@ -7,7 +7,7 @@ import (
 )
 
 type Sms struct {
-	otp Otp
+	Otp // embedded field
 }
 
 func (s *Sms) genRandomOTP(len int) string {
